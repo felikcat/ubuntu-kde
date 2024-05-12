@@ -1,5 +1,32 @@
 == About
-This is a Bash script that converts a regular Ubuntu or Kubuntu installation into my own minimalist KDE setup, which has refinements of its own, and installs just enough to support what's desirable such as video thumbnails and gamemode.
+This is a Bash script that converts a regular Ubuntu or Kubuntu installation into my own minimalist KDE setup, which has refinements of its own, and installs just enough to support what's desirable; here's a list:
+
+* `noto-fonts-*`: The best supported fonts for making sure characters don't display as blank boxes.
+* `gnome-logs`: To better your ability to tell what's going on with your Linux PC.
+* `systemd-oomd`: Better Out Of Memory killing behavior.
+* `gamemode`: Automatic system tuning to maximum performance when used to run a process or game.
+
+* `flatpak plasma-discover-backend-flatpak`: A better alternative to Snaps, and a great way to get the latest programs.
+
+* `dolphin`: File browser.
+- `ark`: File archive support, such as zip and 7z.
+- `ffmpegthumbs`: Video thumbnail support.
+- `kimageformat-plugins, qt5-image-formats-plugins`: Support for various image formats; https://api.kde.org/frameworks/kimageformats/html/index.html
+- `libjxl0.7`: JPEG XL support.
+- `libpackagekitqt5-1`: Required for "Configure > Configure Dolphin > Context Menu > Download New Services".
+- `libtag1v5`: Audio metadata support.
+- `meld`: "Compare files" support.
+- `unrar`: Support for unarchiving .rar files.
+
+* `sddm, sddm-theme-breeze`: KDE's default login manager and the default theme for it.
+* `plasma-desktop`: KDE itself, the minimalist version for Ubuntu.
+* `plasma-workspace-wayland`: Wayland support.
+* `libdecor-0-0, qtwayland5, qt6-wayland`: Run more programs in Wayland instead of Xorg.
+* `kde-spectacle`: Screenshot Utility.
+* `ufw`: A firewall suitable for hosting purposes.
+* `konsole`: Terminal Emulator.
+* `xdg-desktop-portal-gnome`: Required to launch some Flatpaks, such as Telegram Desktop.
+* `gnome-keyring, gnome-keyring-pkcs11, libnotify-bin`: Firefox (non Flatpak version) requires this for keyring support.
 
 == Installation
 It's encouraged to read through KDE.sh to see if there's anything you wish to change, then you run it with sudo, such as: `# sudo bash ~/Downloads/ubuntu-kde-master/KDE.sh`
