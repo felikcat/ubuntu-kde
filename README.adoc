@@ -1,0 +1,5 @@
+== About
+This is a Bash script that converts a regular Ubuntu or Kubuntu installation into my own minimalist KDE setup, which has refinements of its own, and installs just enough to support what's desirable such as video thumbnails and gamemode.
+
+== Installation
+It's encouraged to read through KDE.sh to see if there's anything you wish to change, then you run it with sudo, such as: `# sudo bash ~/Downloads/ubuntu-kde-master/KDE.sh`
